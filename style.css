@@ -1,0 +1,73 @@
+
+body {
+    background: url(hearts.gif) repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    background-color: #ffdeeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+h1 { color: #d63384; 
+
+}
+h2 { color: #000000; 
+
+}
+
+#hint {
+    opacity : 0;
+    transition: opacity 0.4s ease;
+}
+
+#hint:not(.hidden){
+    opacity: 1;
+}
+
+img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.buttons {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#yesButton {
+    background-color: #005f10;
+    color: white;
+}
+
+#noButton {
+    background-color: #db0000;
+    color: white;
+}
+
+.hidden { display: none; }
+
